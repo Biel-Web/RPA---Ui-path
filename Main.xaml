@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1128.8,4560" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1128.8,4600" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,25 +100,25 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="708.8,4495.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequencia Principal" sap:VirtualizedContainerService.HintSize="708.8,4535.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: DesafioRPA" sap:VirtualizedContainerService.HintSize="646.4,4406.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="05069e0f-ceb3-4102-90fb-1c9415d2d5e2" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: DesafioRPA" sap:VirtualizedContainerService.HintSize="646.4,4446.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="05069e0f-ceb3-4102-90fb-1c9415d2d5e2" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="612.8,4166.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="612.8,4206.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
             <ueab:ExcelProcessScopeX.Body>
               <ActivityAction x:TypeArguments="ui:IExcelProcess">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                 </ActivityAction.Argument>
-                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="579.2,4080" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\bieli\Downloads\DesafioRPA.xlsx">
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="579.2,4120" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\bieli\Downloads\DesafioRPA.xlsx">
                   <ueab:ExcelApplicationCard.Body>
                     <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                       <ActivityAction.Argument>
@@ -143,7 +143,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="311c9a01-a547-493e-be6d-49ef223105cb" DesignTimeRectangle="595, 697, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' tag='DIV' /&gt;" FuzzyAccuracy="0.9" Guid="d63c3a79-fa63-4f2b-9cbd-357dc2afd0a8" InformativeScreenshot="2b72915fd4a6fd24fba9115cb99ba5a0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="311c9a01-a547-493e-be6d-49ef223105cb" CvTextArea="594, 632, 56, 17" CvTextArgument="Nome" CvType="Text" DesignTimeRectangle="595, 627, 53, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='Nome' check:innerText='Nome' /&gt;" Guid="12362b0f-df80-4b5e-b564-23e367092f5f" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -154,7 +154,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="034e193e-cdac-4fd6-80df-4312c257ec9f" CvElementArea="589, 874, 377, 41" CvType="InputBox" DesignTimeRectangle="595, 884, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='2' tag='DIV' /&gt;" Guid="69b64162-1279-4303-8a0e-2abc54db728c" InformativeScreenshot="db794da9ad5c11396bc4041e9edecafd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="034e193e-cdac-4fd6-80df-4312c257ec9f" DesignTimeRectangle="595, 814, 102, 30" FullSelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' /&gt;" Guid="bce302e5-e047-4b0f-8033-ff93cadcda65" SearchSteps="Selector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -165,14 +165,14 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="7db51ed6-2643-4d60-a9e4-e86d49ee0d4a" DesignTimeRectangle="595, 696, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='3' tag='DIV' /&gt;" Guid="61e95166-cfaa-4262-846e-d899f740a38e" InformativeScreenshot="cc08b1cfa5a8c4b87424514016f910ba.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="7db51ed6-2643-4d60-a9e4-e86d49ee0d4a" CvTextArea="594, 630, 63, 18" CvTextArgument="Cidade" CvType="Text" DesignTimeRectangle="595, 626, 61, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' /&gt;" Guid="0c1b0cf0-52fc-4836-b826-7e63cff2bd96" SearchSteps="Selector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
                                 </uix:NTypeInto.Target>
                               </uix:NTypeInto>
-                              <uix:NSetText AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Escolher'" sap:VirtualizedContainerService.HintSize="449.6,195.2" sap2010:WorkflowViewState.IdRef="NSetText_1" OutUiElement="{x:Null}" ScopeIdentifier="05069e0f-ceb3-4102-90fb-1c9415d2d5e2" Text="[Linha.ByField(&quot;Estado&quot;)]" Timeout="{x:Null}" Version="V4">
+                              <uix:NSetText DisplayName="Set Text 'Escolher'" sap:VirtualizedContainerService.HintSize="449.6,195.2" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="05069e0f-ceb3-4102-90fb-1c9415d2d5e2" Text="[Linha.ByField(&quot;Estado&quot;)]" Version="V4">
                                 <uix:NSetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="f0662e57-c2c2-4b07-852e-d691ea0e60c3" DesignTimeRectangle="596, 584, 220, 60" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='option' tag='DIV' /&gt;" Guid="8f6898d0-44b1-4710-8ac9-6a00d9e4ee1e" InformativeScreenshot="f244af17f6c8e3dd651da5f57d796102.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                 </uix:NSetText.Target>
@@ -181,7 +181,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="9ee3d0d4-df9a-402a-8dbc-f776e046d50a" DesignTimeRectangle="595, 583, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-labelledby='i17' tag='INPUT' type='text' /&gt;" Guid="e94f5b62-217e-45c9-9e93-66151feb321d" InformativeScreenshot="25955c1211afaa5711ae8a50a11cdb7e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="9ee3d0d4-df9a-402a-8dbc-f776e046d50a" DesignTimeRectangle="595, 586, 105, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='4' tag='DIV' /&gt;" Guid="95c48243-91ac-41f5-ad4f-011cc2d2e7d0" SearchSteps="Selector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -192,7 +192,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="8f7fc9f4-362b-444b-ab36-69ee47979552" DesignTimeRectangle="595, 773, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='5' tag='DIV' /&gt;" Guid="e17f28dd-ce3b-49ae-b7a2-cb2bdb045fda" InformativeScreenshot="bf165b9d04af629c8aba16fc87c53136.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="8f7fc9f4-362b-444b-ab36-69ee47979552" CvTextArea="594, 709, 55, 21" CvTextArgument="Cargo" CvType="Text" DesignTimeRectangle="595, 703, 53, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i21' tag='SPAN' type='' class='M7eMe' aaname='Cargo' check:innerText='Cargo' /&gt;" Guid="535ab0eb-c805-4071-bb43-7549c9d4f740" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -203,7 +203,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="5fdd14b3-e53a-4115-a26c-9f9287f31766" DesignTimeRectangle="595, 585, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='6' tag='DIV' /&gt;" Guid="ddae5d4c-2be8-47b2-8bf9-ff6602215f58" InformativeScreenshot="7749f0c6f175c9a4fc980f21847c492a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="5fdd14b3-e53a-4115-a26c-9f9287f31766" DesignTimeRectangle="595, 515, 49, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i25' tag='SPAN' /&gt;" Guid="a62e200e-d29c-49b5-a6d9-6e8b5e3e2708" SearchSteps="Selector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -222,7 +222,7 @@
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="1db257cf-a7bb-42e2-a21a-94b81b146862" DesignTimeRectangle="597, 394, 20, 20" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='2' parentid='i37' tag='DIV' /&gt;" Guid="78e98b45-3ac3-4ff1-ae8d-bbc873fc7181" InformativeScreenshot="0ad67da3397d4de0565540500bc08ce9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                           <uix:TargetAnchorable.Anchors>
-                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                               <uix:Target CVScreenId="1db257cf-a7bb-42e2-a21a-94b81b146862" DesignTimeRectangle="634, 392, 75, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Feminino' tag='SPAN' /&gt;" Guid="b6ef790c-eec2-40ab-b859-8de542c995ec" SearchSteps="Selector" />
                                             </scg:List>
                                           </uix:TargetAnchorable.Anchors>
@@ -242,7 +242,7 @@
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="925a8e84-0eb4-43ae-ace6-80d2c11f4539" DesignTimeRectangle="597, 349, 20, 20" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='2' parentid='i34' tag='DIV' /&gt;" Guid="c0511684-25dd-4aae-86f8-ae66f8ff5d50" InformativeScreenshot="f645475ac332285d838ab9d47627250e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                           <uix:TargetAnchorable.Anchors>
-                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                               <uix:Target CVScreenId="925a8e84-0eb4-43ae-ace6-80d2c11f4539" DesignTimeRectangle="634, 347, 84, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Masculino' tag='SPAN' /&gt;" Guid="7c9e7020-2ae4-4b5e-9276-d2ea4fe98eff" SearchSteps="Selector" />
                                             </scg:List>
                                           </uix:TargetAnchorable.Anchors>
@@ -256,7 +256,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="503431d4-2aab-4fad-a0df-4078d3ee11a5" DesignTimeRectangle="595, 574, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='7' tag='DIV' /&gt;" Guid="8732a43b-3650-4292-92d6-71418cb589e9" InformativeScreenshot="2ebf916072e3ac2632026c3bf52def13.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="503431d4-2aab-4fad-a0df-4078d3ee11a5" DesignTimeRectangle="595, 504, 38, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i40' tag='SPAN' /&gt;" Guid="f8cd46a6-7aed-4cd1-a044-4aeddca9b8b8" SearchSteps="Selector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -267,7 +267,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="16455463-b04f-48d8-871d-f6c79f759113" DesignTimeRectangle="595, 761, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='8' tag='DIV' /&gt;" Guid="fd3740c3-437f-4ba1-8883-6152cd016625" InformativeScreenshot="15d01873c0b58051dc0fe30aa3481c69.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="16455463-b04f-48d8-871d-f6c79f759113" DesignTimeRectangle="595, 691, 28, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i44' tag='SPAN' /&gt;" Guid="251b6f7e-ff45-47c9-afdd-f0d87b7f2c1d" SearchSteps="Selector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -278,7 +278,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe7m3nyPK-dXKpNO8Uq_Xmh1YjRw5yQSE5FzZ5Ksk4wxWD_3w/viewform" CVScreenId="fcd8aa54-9bab-4632-ae0e-2dff05170c76" DesignTimeRectangle="595, 948, 105, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='9' tag='DIV' /&gt;" Guid="3cf8091a-7a58-4f35-93d7-73d1ee97ae2a" InformativeScreenshot="c231066c62d853e6751e476a2fab09da.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DesafioRPA' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CVScreenId="fcd8aa54-9bab-4632-ae0e-2dff05170c76" DesignTimeRectangle="595, 878, 61, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i48' tag='SPAN' /&gt;" Guid="1d560ef3-5f78-4e1e-8564-b95aea57a9d8" SearchSteps="Selector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
